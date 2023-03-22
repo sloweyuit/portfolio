@@ -298,10 +298,4 @@
       mirror: false,
     });
   });
-<<<<<<< Updated upstream
 })();
-=======
-  
-
-})()
->>>>>>> Stashed changes
