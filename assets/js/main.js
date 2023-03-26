@@ -79,24 +79,7 @@
   /**
    * Back to top button
    */
-  let spotify = select(".spotify");
-  if (spotify) {
-    const toggleSpotify = () => {
-      if (window.scrollY > 100) {
-        spotify.classList.add("active");
-      } else {
-        spotify.classList.remove("active");
-      }
-    };
-    window.addEventListener("load", toggleSpotify);
-    onscroll(document, toggleSpotify);
-    spotify.addEventListener("click", (e) => {
-      e.preventDefault();
-      let spotifyBox = select(".spotify-box");
-      const display = spotifyBox.style.display;
-      spotifyBox.style.display = display == "block" ? "none" : "block";
-    });
-  }
+
 
   /**
 

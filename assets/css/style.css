@@ -32,60 +32,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/* Spotify */
-.spotify {
-  position: fixed;
-
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 60px;
-  z-index: 996;
-  background: #0563bb;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-.spotify i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-.spotify:hover {
-  background: #0678e3;
-  color: #fff;
-}
-.spotify.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-@keyframes showSpotify {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.spotify-show {
-  display: block;
-}
-
-.spotify-box {
-  position: absolute;
-  bottom: 100%;
-  right: 100%;
-  height: 152px;
-  width: 250px;
-  background-color: #fff;
-  border-radius: 12px;
-  border: 0.5px solid #555;
-  transform-origin: bottom right;
-  display: none;
-  animation: showSpotify ease-out 0.3s;
-}
 
 /*--------------------------------------------------------------
 # Back to top button
