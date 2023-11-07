@@ -1,37 +1,40 @@
 <?php
-  /**
-   * Requires the "PHP Email Form" library
-   * The "PHP Email Form" library is available only in the pro version of the template
-   * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-   * For more info and help: https://bootstrapmade.com/php-email-form/
-   */
 
-  require '../assets/vendor/php-email-form/php-email-form.php';
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'truonglevinhphuc2006@gmail.com';
+$mailheader = "From:".$name."<".$email.">\r\n";
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+$recipient = "truonglevinhphuc2006@gmail.com";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'smtp.example.com',
-    'username' => 'your_username',
-    'password' => 'your_password',
-    'port' => 587
-  );
-  */
+mail($recipient, $subject, $message, $mailheader) or die("Error!");
 
-  $contact->add_message($_POST['name'], 'From');
-  $contact->add_message($_POST['email'], 'Email');
-  $contact->add_message($_POST['message'], 'Message', 10);
+// echo'
 
-  echo $contact->send();
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Contact form</title>
+//     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+//     <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+//     <div class="container">
+//         <h1>Thank you for contacting me. I will get back to you as soon as possible!</h1>
+//         <p class="back">Go back to the <a href="index.html">homepage</a>.</p>
+        
+//     </div>
+// </body>
+// </html>
+
+
+
+// ';
+
+
 ?>
