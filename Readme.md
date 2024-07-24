@@ -1,34 +1,22 @@
-# Slowey's Portfolio
+# SloWey Studio
 
-This repository contains the source code for my portfolio website hosted at https://sloweyyy.github.io/portfolio/. The website showcases my projects and skills in web development, design, and data analysis.
+This repository contains the source code for my portfolio website hosted at [Slowey Studio](https://www.slowey.studio). The website showcases my projects and skills in web development and design.
 
 ## Technologies Used
 
-The website is built using the following technologies:
-+ HTML: The website's structure and content are written in HTML.
-+ CSS: The website's styles are written in CSS.
-+ JavaScript: The website's interactivity is written in JavaScript.
-+ 	Bootstrap: The website uses Bootstrap for responsive design and layout.
-+	jQuery: The website uses jQuery for DOM manipulation and event handling.
-
+The website is built using:
+- **HTML**: Structure and content.
+- **CSS**: Styles.
+- **JavaScript**: Interactivity.
+- **Bootstrap**: Responsive design.
+- **jQuery**: DOM manipulation and event handling.
 
 ## Files and Directories
 
-The repository has the following files and directories:
-+index.html: The homepage of the website.
-+	about.html: The page that describes me and my skills.
-+	projects.html: The page that showcases my projects.
-+	css/: The directory that contains the CSS files for the website.
-+	js/: The directory that contains the JavaScript files for the website.
-+	img/: The directory that contains the images used in the website.
-+	vendor/: The directory that contains the third-party libraries used in the website.
-
-
-## Installation and Usage
-
-To run the website locally, follow these steps:
-1.	Clone the repository to your local machine.
-2.	Open the cloned directory in a code editor.
-3.	Open the index.html file in a web browser.
-You can also modify the source code to customize the website for your own use.
-
+- **index.html**: Homepage.
+- **about.html**: About me and my skills.
+- **projects.html**: Project showcases.
+- **css/**: CSS files.
+- **js/**: JavaScript files.
+- **img/**: Images.
+- **vendor/**: Third-party libraries.
